@@ -1,161 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCI-P538 HTTP Server</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 50px;
-            max-width: 800px;
-            width: 100%;
-        }
-        
-        h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        
-        .info-section {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        
-        .info-section h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        
-        .info-section p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
-        
-        .feature-list {
-            list-style: none;
-            margin: 20px 0;
-        }
-        
-        .feature-list li {
-            padding: 10px;
-            margin: 8px 0;
-            background: white;
-            border-radius: 5px;
-            color: #333;
-        }
-        
-        .feature-list li::before {
-            content: "✓ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        
-        .links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        .links a {
-            padding: 12px 30px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .links a:hover {
-            background: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #999;
-            font-size: 0.9em;
-        }
-    </style>
+    <title>PA1 - HTTP Server</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Simple HTTP Server</h1>
-        <p class="subtitle">CSCI-P538 Computer Networks - Fall 2025</p>
-        
-        <div class="info-section">
-            <h2>About This Server</h2>
-            <p>
-                This is a custom HTTP/1.1 server implementation built from scratch using 
-                raw TCP sockets in Python. It demonstrates fundamental concepts of network 
-                programming and the HTTP protocol.
-            </p>
-        </div>
-        
-        <div class="info-section">
-            <h2>Supported Features</h2>
-            <ul class="feature-list">
-                <li>GET - Retrieve files from the server</li>
-                <li>POST - Submit data to /post endpoint</li>
-                <li>PUT - Upload files to the server</li>
-                <li>HEAD - Get headers without body content</li>
-            </ul>
-        </div>
-        
-        <div class="info-section">
-            <h2>Server Information</h2>
-            <p><strong>Port:</strong> 8080</p>
-            <p><strong>Protocol:</strong> HTTP/1.1</p>
-            <p><strong>Transport:</strong> TCP</p>
-            <p><strong>Status:</strong> <span style="color: #28a745;">● Online</span></p>
-        </div>
-        
-        <div class="links">
-            <a href="/helloworld.html">Hello World</a>
-            <a href="/about.html">About</a>
-            <a href="/test.html">Test Page</a>
-        </div>
-        
-        <footer>
-            <p>© 2025 CSCI-P538 | Built with Python Socket Programming</p>
-        </footer>
-    </div>
+    <h1>Simple HTTP Server - PA1</h1>
+    <p><strong>Student:</strong> Hiten Kataria</p>
+    <p><strong>Email:</strong> hkataria@iu.edu</p>
+    <p><strong>Course:</strong> CSCI-P538 Computer Networks, Fall 2025</p>
+    <p><strong>Assignment:</strong> Programming Assignment 1</p>
+    <hr>
+    <p>This is a custom HTTP/1.1 server implementation built from scratch using Python and raw TCP sockets. The server listens on port 8080 and supports GET, POST, PUT, and HEAD methods.</p>
+    <p><strong>Server IP:</strong> 192.168.56.5</p>
+    <p><strong>Implementation:</strong> Raw TCP sockets (AF_INET, SOCK_STREAM)</p>
 </body>
 </html>
